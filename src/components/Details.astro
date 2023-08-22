@@ -1,0 +1,43 @@
+---
+import Card from "./Card.astro";
+import { getCollection } from "astro:content";
+
+const users = await getCollection("data", ({ data }) => {
+  if (Number(data.name.length) <= 15) {
+    return data;
+  } else {
+    return (data.name = data.name.substring(0, 15) + "...");
+  }
+});
+---
+
+<section class="features">
+  <div class="container">
+    {users?.map((user) => <Card name={user.data.name} slug={user.slug} />)}
+  </div>
+</section>
+
+<style>
+  .features .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+    margin: 30px auto;
+  }
+  @media (max-width: 1010px) {
+    .features .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 770px) {
+    .features .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 520px) {
+    .features .container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

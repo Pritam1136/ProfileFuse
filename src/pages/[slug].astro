@@ -1,0 +1,22 @@
+---
+import SingleUserPage from "../components/SingleUserPage.astro";
+import Layout from "../layout/Layout.astro";
+
+export async function getStaticPaths() {
+  const users = await Astro.glob("../content/data/*.md");
+  return users.map((user) => ({
+    params: {
+      slug: String(user.frontmatter.slug),
+    },
+    props: {
+      user,
+    },
+  }));
+}
+
+const { frontmatter } = Astro.props.user;
+---
+
+<Layout title={frontmatter.name}>
+  <SingleUserPage name={frontmatter.name} content={frontmatter.content} />
+</Layout>

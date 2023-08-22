@@ -1,0 +1,47 @@
+---
+import Layout from "../layout/Layout.astro";
+import Details from "../components/Details.astro";
+---
+
+<Layout>
+  <div class="input">
+    <input class="input-feild" type="text" placeholder="Search..." />
+  </div>
+  <p>Connect with people in just one link.</p>
+  <Details />
+</Layout>
+
+<style>
+  .input-feild {
+    height: 35px;
+    width: 550px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .input-feild::placeholder {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 6px;
+  }
+  p {
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px;
+    color: blueviolet;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+  }
+  @media (max-width: 400px) {
+    p {
+      font-size: 26px;
+    }
+  }
+</style>
