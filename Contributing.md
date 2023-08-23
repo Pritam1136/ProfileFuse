@@ -36,8 +36,10 @@ Now that you have set up your environment and created a new branch, you can star
 
 Before submitting your changes, it is important to test them thoroughly to make sure they work as expected. Run the following command to test the application:
 
-npm run build
-npm run preview
+```
+    npm run build
+    npm run preview
+```
 
 This will run all the tests in the project and give you feedback on any failures.
 
