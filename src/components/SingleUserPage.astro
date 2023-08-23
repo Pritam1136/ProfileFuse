@@ -1,10 +1,29 @@
 ---
 interface Props {
-  name: string;
-  content: string;
+  frontmatter: {
+    name: string;
+    content: string;
+    img: string;
+    links: [{ platform: string; link: string }];
+  };
+  yourLink: string;
 }
-const { name, content } = Astro.props as Props;
+const { frontmatter, yourLink } = Astro.props as Props;
 ---
 
-<div>{name}</div>
-<p>{content}</p>
+<div>
+  <img src={frontmatter.img} alt="" />
+  <div>{frontmatter.name}</div>
+  <p>{frontmatter.content}</p>
+  <p class="your-link">{`http://localhost:3000/${yourLink}`}</p>
+  <button> copy</button>
+  {
+    frontmatter.links &&
+      frontmatter.links.map((link) => (
+        <>
+          <p>{link.platform}</p>
+          <p>{link.link}</p>
+        </>
+      ))
+  }
+</div>

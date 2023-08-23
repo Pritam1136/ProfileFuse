@@ -18,5 +18,5 @@ const { frontmatter } = Astro.props.user;
 ---
 
 <Layout title={frontmatter.name}>
-  <SingleUserPage name={frontmatter.name} content={frontmatter.content} />
+  <SingleUserPage frontmatter={frontmatter} yourLink={frontmatter.slug} />
 </Layout>

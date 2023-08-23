@@ -4,6 +4,7 @@ const userCollection = defineCollection({
   schema: z.object({
     name: z.string(),
     username: z.string(),
+    img: z.string(),
     content: z.string(),
   }),
 });
