@@ -6,12 +6,12 @@ import SearchBar from "../components/SearchBar.astro";
 
 <Layout>
   <SearchBar />
-  <p>Connect with people in just one link.</p>
+  <p class="content">Connect with people in just one link.</p>
   <Details />
 </Layout>
 
 <style>
-  p {
+  .content {
     font-size: 34px;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ import SearchBar from "../components/SearchBar.astro";
     font-weight: 700;
   }
   @media (max-width: 400px) {
-    p {
+    .content {
       font-size: 26px;
     }
   }

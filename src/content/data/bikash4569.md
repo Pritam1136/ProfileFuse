@@ -1,7 +1,7 @@
 ---
 name: Bikash sahu
 slug: bikash4569
-img:
+img: https://avatars.githubusercontent.com/u/139378098?v=4
 content: Hello world 12
 links:
   [

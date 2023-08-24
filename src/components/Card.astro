@@ -9,7 +9,9 @@ const { name, slug, img } = Astro.props as Props;
 ---
 
 <div class="card">
-  <img src={img} alt={name?.split(" ")[0] + " " + slug} />
+  <div class="image">
+    <img src={img} alt={name?.split(" ")[0] + " " + slug} />
+  </div>
   <a href={`/${slug}`}>
     <div class="name">{name}</div>
   </a>
@@ -29,7 +31,7 @@ const { name, slug, img } = Astro.props as Props;
     justify-content: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 30px;
     font-size: 18px;
     font-weight: 600;
     color: blueviolet;
@@ -39,5 +41,16 @@ const { name, slug, img } = Astro.props as Props;
   }
 
   .card:hover {
+    box-shadow: 0 0 10px rgb(252, 76, 76);
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+  .image > img {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
   }
 </style>

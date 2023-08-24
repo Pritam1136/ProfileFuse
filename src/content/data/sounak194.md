@@ -1,7 +1,7 @@
 ---
 name: Sounak Kumar
 slug: sounak194
-img:
+img: https://avatars.githubusercontent.com/u/71303643?v=4
 content: Hello world 3
 links:
   [

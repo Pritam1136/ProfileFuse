@@ -1,7 +1,7 @@
 ---
-name: "Pritam Roy"
-slug: "pritam1136"
-img:
+name: Pritam Roy
+slug: pritam1136
+img: https://avatars.githubusercontent.com/u/126561455?v=4
 content: "Hello World"
 links:
   [
