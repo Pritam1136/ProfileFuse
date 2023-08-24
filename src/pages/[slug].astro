@@ -14,9 +14,10 @@ export async function getStaticPaths() {
   }));
 }
 
-const { frontmatter } = Astro.props.user;
+const { Content, frontmatter } = await Astro.props.user;
 ---
 
 <Layout title={frontmatter.name}>
-  <SingleUserPage frontmatter={frontmatter} yourLink={frontmatter.slug} />
+  <SingleUserPage frontmatter={frontmatter} />
+  <Content />
 </Layout>

@@ -2,13 +2,14 @@
 interface Props {
   name?: string;
   slug: string;
+  img: string;
 }
 
-const { name, slug } = Astro.props as Props;
+const { name, slug, img } = Astro.props as Props;
 ---
 
 <div class="card">
-  <img src="" alt="" />
+  <img src={img} alt={name?.split(" ")[0] + " " + slug} />
   <a href={`/${slug}`}>
     <div class="name">{name}</div>
   </a>

@@ -9,3 +9,5 @@ links:
     { platform: twitter, link: https://www.twitter.com },
   ]
 ---
+
+I am Bikas and i am a web developer. I am learning react.js right now.

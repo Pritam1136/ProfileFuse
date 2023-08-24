@@ -9,3 +9,5 @@ links:
     { platform: twitter, link: https://www.twitter.com },
   ]
 ---
+
+Hello, I am Sounak and i want to become a cybersecurity expert that's why i am learning about linux and operating system.

@@ -13,7 +13,11 @@ const users = await getCollection("data", ({ data }) => {
 
 <section class="features">
   <div class="container">
-    {users?.map((user) => <Card name={user.data.name} slug={user.slug} />)}
+    {
+      users?.map((user) => (
+        <Card name={user.data.name} slug={user.slug} img={user.data.img} />
+      ))
+    }
   </div>
 </section>
 

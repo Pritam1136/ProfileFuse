@@ -9,3 +9,5 @@ links:
     { platform: twitter, link: https://www.twitter.com },
   ]
 ---
+
+Hello I am Pritam and I am a MERN stack developer and a open source enthusiast.

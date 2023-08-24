@@ -1,0 +1,35 @@
+<div class="input">
+  <input class="input-feild" type="text" placeholder="Search..." />
+</div>
+
+<style>
+  .input-feild {
+    height: 35px;
+    width: 550px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .input-feild::placeholder {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 6px;
+  }
+</style>
+
+<script>
+  const input = document.querySelector("input.input-feild");
+
+  input?.addEventListener(
+    "change",
+    (e: Event & { target: HTMLInputElement }) => {
+      const { target } = e;
+      console.log(target.value);
+    }
+  );
+</script>
