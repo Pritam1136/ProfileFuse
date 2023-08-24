@@ -96,7 +96,7 @@ You can deploy your ProfileFuse site to various platforms, such as Vercel, Netli
 
 ## Contributing
 
-Contributions to ProfileFuse are welcome! Whether you're a developer, designer, or just found a bug, we appreciate your input. Please refer to our [Contribution Guidelines](CONTRIBUTING.md) for more information on how to contribute.
+Contributions to ProfileFuse are welcome! Whether you're a developer, designer, or just found a bug, we appreciate your input. Please refer to our [Contribution Guidelines](https://github.com/Pritam1136/ProfileFuse/blob/main/Contributing.md) for more information on how to contribute.
 
 ## License
 
