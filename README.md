@@ -56,7 +56,7 @@ Before you begin, make sure you have the following installed:
 
    ```md
    ---
-
+   
    name: Bikash sahu
    slug: bikash4569
    img:
@@ -66,14 +66,11 @@ Before you begin, make sure you have the following installed:
    { platform: github, link: https://www.github.com },
    { platform: twitter, link: https://www.twitter.com },
    ]
+   
+   ---
+
    I am Bikas and i am a web developer. I am learning react.js right now.
    ```
-
-```
-
----
-
-```
 
 Update the `links` array with your own links and their titles.
 
