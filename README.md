@@ -66,13 +66,14 @@ Before you begin, make sure you have the following installed:
    { platform: github, link: https://www.github.com },
    { platform: twitter, link: https://www.twitter.com },
    ]
+   I am Bikas and i am a web developer. I am learning react.js right now.
    ```
+
+```
 
 ---
 
-I am Bikas and i am a web developer. I am learning react.js right now.
-
-````
+```
 
 Update the `links` array with your own links and their titles.
 
@@ -82,7 +83,7 @@ Run the development server to preview your ProfileFuse page:
 
 ```bash
 npm run dev
-````
+```
 
 Open your browser and visit `http://localhost:3000` to see your page in action.
 
