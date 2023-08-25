@@ -1,7 +1,14 @@
-<div class="footer">This is Footer.</div>
+---
+const year = new Date().getFullYear();
+---
+
+<div class="footer">
+  {year} Developed by Pritam and open source community
+</div>
 
 <style>
   .footer {
+    padding: 4px;
     display: flex;
     justify-content: center;
     margin-bottom: 0;

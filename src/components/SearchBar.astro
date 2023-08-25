@@ -13,6 +13,10 @@
   .input-feild::placeholder {
     font-family: "Courier New", Courier, monospace;
   }
+  .input-feild:focus {
+    outline: 0;
+    border: 1px solid rgb(38, 38, 38);
+  }
 
   .input {
     display: flex;
@@ -23,13 +27,5 @@
 </style>
 
 <script>
-  const input = document.querySelector("input.input-feild");
-
-  input?.addEventListener(
-    "change",
-    (e: Event & { target: HTMLInputElement }) => {
-      const { target } = e;
-      console.log(target.value);
-    }
-  );
+  import "../ts/utils.ts";
 </script>
