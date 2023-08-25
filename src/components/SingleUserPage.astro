@@ -18,7 +18,9 @@ const { frontmatter } = Astro.props as Props;
   />
   <div>{frontmatter.name}</div>
   <p>{frontmatter.content}</p>
-  <p class="your-link">{`http://localhost:3000/${frontmatter.slug}`}</p>
+  <p class="your-link">
+    {`https://profilefuse.netlify.app/${frontmatter.slug}`}
+  </p>
   <button> copy</button>
   {
     frontmatter.links &&
