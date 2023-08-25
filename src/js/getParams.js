@@ -11,7 +11,7 @@ function searchUser(users, search) {
     (hidden.style.display = "block"),
       (name.innerText = users.name),
       (img.src = users.img),
-      (slug.href = users.slug);
+      (slug.href = `https://profilefuse.netlify.app/${users.slug}`);
   }
 }
 
