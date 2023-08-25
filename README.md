@@ -4,7 +4,7 @@
 
 ProfileFuse is a simple and customizable open-source alternative to services like Linktree, designed to help you showcase a collection of links important to you or your brand, all in one place. Whether you want to share your social media profiles, portfolio, blog, or any other online presence, ProfileFuse has got you covered. The best part? You have complete control over your data and the look of your page.
 
-![ProfileFuse Screenshot](screenshot.png)
+(![ProfileFuse screenshot](<public/Screenshot 2023-08-25 095554.png>))
 
 ## Features
 
