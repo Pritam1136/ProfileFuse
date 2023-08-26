@@ -5,13 +5,13 @@ const name = document.querySelector(".name");
 const hidden = document.querySelector(".hidden");
 
 function searchUser(users, search) {
-  if (users.name != search) {
-    console.log("sorry");
-  } else {
+  if (users.name.toLowerCase().includes(search.toLowerCase())) {
     (hidden.style.display = "block"),
       (name.innerText = users.name),
       (img.src = users.img),
       (slug.href = `https://profilefuse.netlify.app/${users.slug}`);
+  } else {
+    console.log("sorry");
   }
 }
 
