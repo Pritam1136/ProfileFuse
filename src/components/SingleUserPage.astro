@@ -29,7 +29,9 @@ const { frontmatter } = Astro.props as Props;
   {
     frontmatter.links &&
       frontmatter.links.map((link) => (
-        <a href={link.link}>Follow me on {link.platform}</a>
+        <a class="social-links" href={link.link}>
+          Follow me on {link.platform}
+        </a>
       ))
   }
 </div>
@@ -89,5 +91,13 @@ const { frontmatter } = Astro.props as Props;
       justify-content: center;
       gap: 10px;
     }
+  }
+  .social-links {
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
   }
 </style>
