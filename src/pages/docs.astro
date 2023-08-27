@@ -3,5 +3,94 @@ import Layout from "../layout/Layout.astro";
 ---
 
 <Layout title="documents">
-  <div>This is docs page.</div>
+  <header>
+    <h1>ProfileFuse Documentation</h1>
+  </header>
+  <div class="container">
+    <h1>Welcome to ProfileFuse!</h1>
+    <p>
+      ProfileFuse is an open-source alternative to Linktree, allowing you to
+      create a simple, elegant page containing links to your various online
+      profiles.
+    </p>
+
+    <h2>Getting Started</h2>
+    <p>To get started with ProfileFuse, follow these steps:</p>
+    <ol>
+      <li>Fork or clone the ProfileFuse repository from GitHub.</li>
+      <li>
+        Edit the <code>index.html</code> file to customize your profile links and
+        information.
+      </li>
+      <li>
+        Modify the CSS in the <code>&lt;style&gt;</code> section of the HTML file
+        to style your page according to your preferences.
+      </li>
+      <li>
+        Deploy the HTML and CSS files to a web server or hosting platform of
+        your choice.
+      </li>
+    </ol>
+
+    <h2>Customization</h2>
+    <p>
+      You can customize the appearance of your ProfileFuse page by modifying the
+      CSS styles in the <code>&lt;style&gt;</code> section of the HTML file. Feel
+      free to experiment with colors, fonts, and layout to match your personal brand.
+    </p>
+
+    <h2>Example Profile Link</h2>
+    <a class="profile-link" href="https://example.com" target="_blank"
+      >Visit My Website</a
+    >
+  </div>
 </Layout>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+  header {
+    background-color: rgb(190, 153, 224);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .profile-link {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+
+  .profile-link:hover {
+    background-color: #f5f5f5;
+  }
+</style>
